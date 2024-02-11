@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML test FORM</title>
+    <style>
+        form {
+            background-color: silver;
+            width: 500px;
+            text-align: right;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- html form testing 
+            Must always have Name -->
+    <!-- the most one -->
+    <p>Choose your favorite Web language:</p>
+    <form>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+    </form>
+    <br><hr><br>
+    <!-- we can select more than one -->
+    <form>
+    </form>
+    <br><hr><br>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="Sirawith"><br>
+        <br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Prasith"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <br><hr>
+    <!-- https://jkorpela.fi/forms/testing.html -->
+    <h1>HTML FORM</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <label for="Firstname">FirstName :</label>
+        <input type="text" name="firstname"><br>
+        <label for="Age">Age</label>
+        <input type="text" name="Age"><br>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name= 'gender' value="male">
+            <label for="male">Male</label>
+            <input type="radio" name= 'gender' value="female">
+            <label for="female">Female</label>
+            <input type="radio" name= 'gender' value="other">
+            <label for="other">Other</label>
+        </fieldset>
+        <fieldset style="text-align: center; width : 200px; border :2px dashed blue;">
+            <legend style="text-align: left;">Status</legend>
+            <input type="radio" name= 'status' value="Single">
+            <label for="Single">Single</label>
+            <input type="radio" name= 'status' value="Married">
+            <label for="Married">Married</label>
+        </fieldset>
+        <br>
+        <p style="margin-right: 180px;">Vehicle</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+        <label for="cars">Choose a car:</label>
+        <br>
+        <label style="margin-right: 10px;">Models</label>
+        <select id="cars" name="cars" >
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="fiat">Fiat</option>
+            <option value="audi">Audi</option>
+        </select>
+        <br><br>
+        <textarea name="message" rows="10" cols="30">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam optio accusantium quia nesciunt libero eveniet, quis odio minima perspiciatis deleniti.
+        </textarea>
+        <br>
+        <input list="browsers" name="'browsers">
+        <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <br>
+        <form>
+            <label for="appt">Select a time:</label>
+            <input type="time" id="appt" name="appt">
+        </form>
+        <form>
+            <label for="birthdaytime">Birthday (date and time):</label>
+            <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+          </form>
+        <br>
+        <br>
+        <input type="submit" value="submit">
+      </form>
+</body>
+</html>
