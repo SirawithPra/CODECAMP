@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TEST07 Table</title>
+    <!-- CSS -->
+    <!-- tr ตีเส้นไม่ได้ -->
+    <style>
+        #T1 {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 80%;
+        }
+        #T2{
+            width: 100%;
+            border-spacing :2em;;
+        }
+        td, th {
+          color: blue;
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+          text-align: center;
+        }
+
+        td {
+            color: black;
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+        </style>
+</head>
+<body>
+    <h1>TABLE</h1>
+    <table id=T1>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+        <tr>
+          <td>Ernst Handel</td>
+          <td>Roland Mendel</td>
+          <td>Austria</td>
+        </tr>
+        <tr>
+          <td>Island Trading</td>
+          <td>Helen Bennett</td>
+          <td>UK</td>
+        </tr>
+        <tr>
+          <td>Laughing Bacchus Winecellars</td>
+          <td>Yoshi Tannamuri</td>
+          <td>Canada</td>
+        </tr>
+        <tr>
+          <td>Magazzini Alimentari Riuniti</td>
+          <td>Giovanni Rovelli</td>
+          <td>Italy</td>
+        </tr>
+    </table>
+    <br><hr><br>
+    <table id=T2>
+        <tr>
+            <th>Contact Name</th>
+            <th>Phone Number</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td> Sirawith Prasith</td>
+            <td>098234xxxx</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td> Ratima Jundee</td>
+            <td>094353xxxx</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td> Ethan Huntz</td>
+            <td>0983453xxxx</td>
+            <td>22</td>
+        </tr>
+        <tr style="text-align: center;">
+            <td colspan="2"> Age Mean</td>
+            <td>21.66
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
