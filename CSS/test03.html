@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+a.highlight:hover {
+  color: #ff0000;
+  font-size: 22px;
+} 
+p:hover{
+	color : salmon}
+p:active{
+	color : blue}
+div.b {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div.b:hover {
+  background-color: blue;
+}
+p.a {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+  }
+div:hover p {
+    display: inline-block;
+  }
+p i:first-child {
+    color: blue;
+  } 
+p.v i:first-of-type {
+    color: blue;
+  } 
+</style>
+</head>
+<body>
+<!-- pseudo class -->
+<h2>Pseudo-classes and HTML Classes</h2>
+
+<p>When you hover over the first link below, it will change color and font size:</p>
+
+<p><a class="highlight" href="css_syntax.asp">CSS Syntax</a></p>
+
+<p><a href="default.asp">CSS Tutorial</a></p>
+
+<div class="b">Mouse Over Me</div>
+<hr>
+<div>Hover over this div element to show the p element
+<p class="a">Tada! Here I am!</p>
+</div>
+<p>I am a <i>strong</i> person. I am a <i>strong</i> person.</p>
+<p>I am a <b>strong</b> person. I am a <i>strong</i> person.</p>
+<p class="v">I am a <b>strong</b> person. I am a <i>strong</i> person.</p>
+
+
+</body>
+</html>
