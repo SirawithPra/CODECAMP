@@ -1,0 +1,8 @@
+p.center {
+    text-align: center;
+    color: red;
+}
+p.large{
+    margin: auto 10px;
+    font-size: 30px;
+}
