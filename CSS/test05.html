@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class^='top']{
+            background: blue;
+        }
+        [class|="top"] {
+            background: yellow;
+          }
+        p[class$='test']{
+            background: green;
+        }
+        [class*="my"] {
+            background: salmon;
+          }
+        input[type="text"] {
+            width: 150px;
+            display: block;
+            margin-bottom: 10px;
+            background-color: yellow;
+          }
+          
+        input[type="button"] {
+            width: 120px;
+            margin-left: 35px;
+            display: block;
+          }
+    </style>
+</head>
+<body>
+    
+<h2>CSS [attribute="value"] Selector</h2>
+ 
+<h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="topcontent">Are you learning CSS?</p>
+<p class=" 'first_test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, beatae?</p>
+<div class="my-test">The third div element.</div>
+
+<h2>Styling Forms</h2>
+
+<form name="input" action="" method="get">
+  Firstname:<input type="text" name="Name" value="Peter" size="20">
+  Lastname:<input type="text" name="Name" value="Griffin" size="20">
+  <input type="button" value="Example Button">
+</form>
+
+</body>
+</html>
