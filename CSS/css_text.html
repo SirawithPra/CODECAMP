@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text_CSS</title>
+    <style>
+        *{box-sizing: border-box;}
+        h1{
+            background-color: thistle;
+            text-align: center;
+            width: 50vw;
+            margin: auto;
+        }
+        p{
+            width: 70vw;
+            text-align: center;
+            margin: auto;
+        }
+        img.a {
+        vertical-align: baseline;
+        }
+        img.b {
+        vertical-align: text-top;
+        }
+        img.c {
+        vertical-align: text-bottom;
+        }
+        img.d {
+        vertical-align: sub;
+        }
+        img.e {
+        vertical-align: super;
+        }
+        span{
+            display: inline-block;
+            width: 300px;
+            border: 1px dashed blue;
+            padding: 20px;
+            margin-left: 10px;
+            text-shadow: 2px 2px 2px silver;
+            box-shadow: 6px 7px 8px 5px silver;
+        }
+        div img{
+            vertical-align: top;
+            margin-right: 10px;
+        }
+        a{
+            font-size: 30px;
+            text-align: center;
+            display: block;
+            text-decoration-skip-ink: none;
+            text-decoration: none
+        }
+         div p:first-child{
+           text-transform: capitalize;
+           text-align: left; 
+           text-indent: 50px;
+           letter-spacing: 0.05em;
+           line-height: 1.5;
+           word-spacing: 0.2em;
+         }
+         div.test {
+            white-space: nowrap; 
+            width: 200px; 
+            overflow: hidden; 
+            border: 1px solid #000000;
+          }
+          
+          div.test:hover {
+            overflow: visible;
+            border: none;
+            color: red;
+          }
+    </style>
+</head>
+<body>
+    <h1>Header</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia unde, nobis quos minus molestiae assumenda iure dolores vero, mollitia illo quis laboriosam quod, blanditiis animi nam quas consequuntur optio rem facere iusto voluptatibus sed quae beatae odit? Error repellendus illum odio. Quam aliquam voluptatum ipsam perspiciatis velit doloribus. Esse obcaecati eligendi laudantium eveniet numquam ratione repudiandae deleniti similique? Iusto optio saepe molestiae vel nobis, inventore repellat dolore et aperiam sapiente officiis assumenda excepturi consectetur, aut hic dolorem laudantium? Optio laudantium illo libero repudiandae quidem dicta ab tempora blanditiis! Modi assumenda dolores consectetur voluptatem totam saepe nulla nihil dicta doloremque illo.
+    </p>
+
+    <h1>The vertical-align Property</h1>
+
+    <h2>vertical-align: baseline (default):</h2>
+    <p>An <img class="a" src="https://picsum.photos/200" > image with a default alignment.</p> 
+
+    <h2>vertical-align: text-top:</h2>
+    <p>An <img class="b" src="https://picsum.photos/200"> image with a text-top alignment.</p> 
+
+    <h2>vertical-align: text-bottom:</h2>
+    <p>An <img class="c" src="https://picsum.photos/200"> image with a text-bottom alignment.</p>
+
+    <h2>vertical-align: sub:</h2>
+    <p>An <img class="d" src="https://picsum.photos/200"> image with a sub alignment.</p> 
+
+    <h2>vertical-align: sup:</h2>
+    <p>An <img class="e" src="https://picsum.photos/200"> image with a super alignment.</p>
+    <hr>
+    <div>
+        <img src="https://picsum.photos/200" alt=""><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolorem facilis impedit, assumenda enim porro fugit iste incidunt vitae, quaerat odit quo. Impedit vero laborum blanditiis reprehenderit alias earum accusamus inventore et, excepturi minima deserunt placeat reiciendis animi nostrum praesentium labore numquam libero quisquam nihil ratione obcaecati vel deleniti! Aliquid modi recusandae harum rem obcaecati ad numquam nemo fuga! Consequatur, ipsa necessitatibus. Repudiandae porro rerum soluta reiciendis consequatur asperiores odit. Voluptas enim molestias omnis aperiam ipsa laudantium accusamus placeat, ab facilis consequatur, id cum unde nam ipsum? Deleniti cum magni reprehenderit porro hic quas voluptas, veniam blanditiis in libero error?</span>
+    </div>
+    <hr>
+    <a class="aa" href="#">Happy</a>
+    <div class="a">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos at ipsum quisquam quos cum doloremque totam? Consectetur id possimus omnis sit eius in at voluptate explicabo neque recusandae. In, autem!</p>
+    </div>
+    <p>Hover over the two divs below, to see the entire text.</p>
+    <div class="test" style="text-overflow:ellipsis;">This is some long text that will not fit in the box</div>
+    <br>
+    <div class="test" style="text-overflow:clip;">This is some long text that will not fit in the box</div>
+
+</body>
+</html>
