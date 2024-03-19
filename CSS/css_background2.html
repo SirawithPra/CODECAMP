@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BACKGROUND LAB</title>
+    <style>
+        div[class ^=box]{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+            background-image: url(http://picsum.photos/id/1000/600);
+            transition: transform 2s;
+        }
+        div[Class^=box]:hover{
+            transform: rotate(20deg);
+        }
+        .row2 > .box2{
+            transform: scale(0.9);
+            opacity: 50%;;
+        }
+    </style>
+</head>
+<body>
+    <img src="http://picsum.photos/id/1000/200" alt="">
+    <div class="row1">
+        <div class="box1"></div>
+        <div class="box2" style="background-position: center top;"></div>
+        <div class="box3" style="background-position: right top;"></div>
+    </div>
+    <div class="row2">
+        <div class="box1" style="background-position: left center;"></div>
+        <div class="box2" style="background-position: center center;"></div>
+        <div class="box3" style="background-position: right center;"></div>
+    </div>
+    <div class="row3">
+        <div class="box1" style="background-position: left bottom;"></div>
+        <div class="box2" style="background-position: center bottom;"></div>
+        <div class="box3" style="background-position: right bottom;"></div>
+    </div>
+</body>
+</html>
