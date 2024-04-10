@@ -11,7 +11,7 @@
             box-sizing: border-box;
         }
         body{
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
         }
         html {
@@ -28,7 +28,7 @@
             display: flex;
             list-style: none;
             margin: 0; 
-            background: rgba(0, 123, 255, 0.486);
+            background: rgba(31, 94, 239, 0.691);
           }
           
           .navigation a {
@@ -41,55 +41,55 @@
           .navigation a:hover {
             background: #1565C0;
           }
-          
-          @media all and (max-width: 800px) {
-            .navigation {
-              justify-content: space-around;
-            }
-          }
-          
-          @media all and (max-width: 600px) {
-            .navigation {
-              flex-flow: column wrap;
-              padding: 0;
-            }
-            .navigation a { 
-              text-align: center; 
-              padding: 10px;
-              border-top: 1px solid rgba(255, 255, 255,0.3); 
-              border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
-            }
-            .navigation li:last-of-type a {
-              border-bottom: none;
-            }
-        }
         main{
             background-color: aquamarine;
             height: 80vh;
-            display: flex;
             background-image: url(http://picsum.photos/id/1015/1000);
+            display: flex;
+            flex-wrap: wrap;
         }
         main > * {
-            outline: 1px dashed lime;
             flex: 1;
         }
         .main-c{
-            flex-grow: 5;
+            flex: 4 500px;
             text-align: center;
             display: flex;
             flex-flow: column;
             justify-content: center;
-            color: rgb(243, 152, 5);
         }
         .main-l{
+            flex-basis: 100px;
             background-color: rgba(238, 130, 238, 0.5);
         }
         .main-r{
+            flex-basis: 100px;
             background-color: rgba(238, 130, 238, 0.5);
         }
         footer{
             background-color: thistle;
             height: 10vh;
+        }
+        @media ( max-width: 700px){
+            header{
+                justify-content: center;
+            }
+            .navigation{
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+        @media ( max-width: 600px){
+            header{
+                height: auto;
+                text-align: center;
+            }
+            .navigation{
+                flex-flow: column;
+            }
+            .navigation li {
+                border-bottom:  1px solid gray;
+            }
         }
 
     </style>
@@ -104,12 +104,22 @@
         </ul>
     </header>
     <main>
-        <div class="main-l">Left</div>
+        <div class="main-l">
+            <h2>News</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut quae magni inventore quod iusto laborum earum eum voluptates, provident maxime nisi doloribus debitis, suscipit sit quasi aliquam culpa consequatur!</p>
+        </div>
         <div class="main-c">
             <h1>Title</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur ducimus quas eligendi tempore hic labore? Distinctio, libero omnis iste dolorem tenetur deleniti repudiandae maxime dolorum quibusdam aliquid facere id esse mollitia iure ut maiores aut voluptatem debitis nihil quisquam dolore quidem minus! Id saepe vitae voluptate aperiam minus consectetur.</p>
+            <div style="margin: 60px 20px 0px 60px;">
+                <h3 style="text-align: left;">Title</h3>
+                <p style="text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error nemo assumenda, modi aliquam enim a quas inventore optio reprehenderit similique saepe illo cumque placeat sed debitis ipsam magni mollitia. Aliquid non tenetur sequi minima itaque.</p>
+            </div>
         </div>
-        <div class="main-r">Right</div>
+        <div class="main-r">
+            <h2>Ads</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut quae magni inventore quod iusto laborum earum eum voluptates, provident maxime nisi doloribus debitis, suscipit sit quasi aliquam culpa consequatur!</p>
+        </div>
     </main>
     <footer>Footer</footer>
 </body>
