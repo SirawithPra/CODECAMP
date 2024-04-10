@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex</title>
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        .container{
+            flex-flow: wrap;
+            display: flex;
+            align-items: flex-start;
+            width: 80vw;
+            height: 80vh;
+            background-color: deeppink;
+            margin: 10vh auto;
+
+        }
+        .container > * {
+            background-color: lime;
+            width: 10vb;
+            margin: 5px;
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            flex-shrink: 1;
+            height: 10vh;
+        }
+        .item3{
+            font-size: 50px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body><div class="container">
+    
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+    <div class="item5">5</div>
+    <div class="item6">6</div>
+    <div class="item7">7</div>
+    <div class="item8">8</div>
+    <div class="item9">9</div>
+    <div class="item10">10</div>
+
+</div>
+</body>
+</html>

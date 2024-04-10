@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS LAB 01</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            max-width: 800px;
+            margin: auto;
+        }
+        html {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        header{
+            background-color: rgb(91, 91, 199, 0.8);
+            height: 10vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        .navigation {
+            display: flex;
+            list-style: none;
+            margin: 0; 
+            background: rgba(0, 123, 255, 0.486);
+          }
+          
+          .navigation a {
+            text-decoration: none;
+            display: block;
+            padding: 0.5em;
+            color: white;
+          }
+          
+          .navigation a:hover {
+            background: #1565C0;
+          }
+          
+          @media all and (max-width: 800px) {
+            .navigation {
+              justify-content: space-around;
+            }
+          }
+          
+          @media all and (max-width: 600px) {
+            .navigation {
+              flex-flow: column wrap;
+              padding: 0;
+            }
+            .navigation a { 
+              text-align: center; 
+              padding: 10px;
+              border-top: 1px solid rgba(255, 255, 255,0.3); 
+              border-bottom: 1px solid rgba(0, 0, 0, 0.1); 
+            }
+            .navigation li:last-of-type a {
+              border-bottom: none;
+            }
+        }
+        main{
+            background-color: aquamarine;
+            height: 80vh;
+            display: flex;
+            background-image: url(http://picsum.photos/id/1015/1000);
+        }
+        main > * {
+            outline: 1px dashed lime;
+            flex: 1;
+        }
+        .main-c{
+            flex-grow: 5;
+            text-align: center;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            color: rgb(243, 152, 5);
+        }
+        .main-l{
+            background-color: rgba(238, 130, 238, 0.5);
+        }
+        .main-r{
+            background-color: rgba(238, 130, 238, 0.5);
+        }
+        footer{
+            background-color: thistle;
+            height: 10vh;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="main-l">Left</div>
+        <div class="main-c">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur consequatur ducimus quas eligendi tempore hic labore? Distinctio, libero omnis iste dolorem tenetur deleniti repudiandae maxime dolorum quibusdam aliquid facere id esse mollitia iure ut maiores aut voluptatem debitis nihil quisquam dolore quidem minus! Id saepe vitae voluptate aperiam minus consectetur.</p>
+        </div>
+        <div class="main-r">Right</div>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
