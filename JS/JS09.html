@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        let passcode ="";
+        let i=0
+        while(passcode!=='Codecamp'){
+            passcode =prompt('Enter password')
+            i++
+            console.log(`Number of tries = ${i}`)
+        }
+        document.querySelector('#p1').innerText='OK, You can access our content'
+        for (let i=0;i<20;i++){
+            console.log(i)
+        }
+    </script>
+</body>
+</html>

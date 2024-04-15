@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{
+            text-align: center;
+            margin: 1 rem;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p id="p1"></p>
+    <script>
+        for(let m=2;m<13;m++){
+            for(let n=1;n<13;n++){
+                document.querySelector('#p1').innerHTML += `${m} x ${n} = ${m*n} <br>`
+            }
+            document.querySelector('#p1').innerHTML+='<hr>'
+        }
+    </script>
+</body>
+</html>

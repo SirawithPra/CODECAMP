@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <!-- <input type="text" id="int1" placeholder="Who are you? "> -->
+    <!-- <button onclick="alertString()"></button> -->
+    <script>
+        let user = prompt('Who are you?','');
+        if (user =='Admin'){
+            let pass = prompt('Password','');
+            if(pass=='codecamp'){alert('ยินดีต้อนรับ')}
+            else if (Boolean(pass)){alert('Wrong password')}
+            else {alert('ยกเลิก')}
+            
+        }else if(Boolean(user)){
+            alert("ผมไม่รู้จักคุณ")
+        }else{
+            alert('ยกเลิก')
+        }
+    </script>
+</body>
+</html>

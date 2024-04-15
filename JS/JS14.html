@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let answer = +prompt('First number : ')
+        while(true){
+        let tries = +prompt('Guessing numbers :')
+        if(tries===answer){
+            break
+        }
+        else if (tries<answer){
+            alert('More than this')
+        }else{
+            alert('Less than this')
+            }
+        }
+        alert('That is Correct!!')
+    </script>
+</body>
+</html>
