@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj ={}
+        obj.name ='Sonter'
+        obj.surname='Pakorn'
+        console.log(obj)
+        obj.name ='Boy'
+        delete obj.name
+
+        function isEmtry(obj){
+            for (let key in obj){
+                return false
+            }
+            return true
+        }
+
+        const user ={
+            name:'John'
+        }
+        user.name = 'Pete'
+
+        let salaries ={
+            John : 100,
+            Ann : 160,
+            Pete : 130
+        }
+        function sum(obj){
+            let totalSalaries = 0;
+            for (let key in obj){
+                totalSalaries+=obj[key];
+            }
+            return totalSalaries;
+        }
+        sum(salaries)
+
+        let menu={
+            width : 200,
+            height : 300,
+            title : "My menu"
+        };
+        function multiplyNumeric(obj,times){
+            for (let key in obj){
+                if (typeof obj[key]!=='number') continue;
+                obj[key]*=times
+            }
+        }
+        multiplyNumeric(menu,5) //pass by reference, so while edit value that will be changed too
+    </script>
+</body>
+</html>
