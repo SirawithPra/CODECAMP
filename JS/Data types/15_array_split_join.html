@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // join
+        const elements = ['Fire', 'Air', 'Water'];
+
+        console.log(elements.join());
+        // Expected output: "Fire,Air,Water"
+
+        console.log(elements.join(''));
+        // Expected output: "FireAirWater"
+
+        console.log(elements.join('-'));
+        // Expected output: "Fire-Air-Water"
+
+        const str = 'The quick brown fox jumps over the lazy dog.';
+
+        //split
+        const words = str.split(' ');
+        console.log(words[3]);
+        // Expected output: "fox"
+
+        const chars = str.split('');
+        console.log(chars[8]);
+        // Expected output: "k"
+
+        const strCopy = str.split();
+        console.log(strCopy);
+        // Expected output: Array ["The quick brown fox jumps over the lazy dog."]
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("ก".charCodeAt())  // chatCodeAt plane 0 only
+        console.log("ก".charCodeAt().toString(16))
+        console.log("\u0e01")
+
+        console.log("\u{1f600}")        //codePointAt can use with any plane
+        console.log("\u{1f600}".codePointAt().toString(16))
+    </script>
+</body>
+</html>

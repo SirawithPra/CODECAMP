@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        nm=[12,3,123,5,4,324,-324,-7,-34,-3]
+        function compare(a,b){
+            return (a>b)? 1: (a<b)? -1:0
+        } //[-324, -34, -7, -3, 3, 4, 5, 12, 123, 324] (10)
+        function compare2(a,b){
+            return (a-b)
+        } //[-324, -34, -7, -3, 3, 4, 5, 12, 123, 324] (10)
+        compare3=(a,b) => (a-b)
+         //[-324, -34, -7, -3, 3, 4, 5, 12, 123, 324] (10)
+
+        function comparerevears(a,b){
+            return (a>b)? -1: (a<b)? 1:0
+        } //[324, 123, 12, 5, 4, 3, -3, -7, -34, -324] (10)
+        function compareAbs(a,b){
+            aa= Math.abs(a)
+            bb= Math.abs(b)
+            return (aa>bb)? 1: (aa<bb)? -1:0
+        } //[-3, 3, 4, 5, -7, 12, -34, 123, -324, 324] (10)
+
+        k=nm.sort(compare3)         //[-324, -34, -7, -3, 3, 4, 5, 12, 123, 324] (10)
+        kk=nm.sort((a,b) => (a-b))  //[-324, -34, -7, -3, 3, 4, 5, 12, 123, 324] (10)
+        kkk=nm.sort( (a,b) => Math.abs(a)-Math.abs(b)) //[-3, 3, 4, 5, -7, 12, -34, 123, -324, 324] (10)
+    
+        //sort arr string ภาษาไทย ภาษาอังกฤษ
+        arrName.sort( (a,b) => a.localeCompare(b))
+    
+    </script>
+    
+</body>
+</html>

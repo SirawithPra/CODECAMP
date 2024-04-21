@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Q1
+        function ucFirst(txt){
+            alert(txt[0].toUpperCase()+txt.substring(1).toLowerCase())
+            return txt[0].toUpperCase()+txt.substring(1).toLowerCase()
+        }
+        
+        //Q2
+        function checkSpam(txt){
+            bl=true
+            console.log(txt.indexOf("xxx"));
+            (txt.indexOf("xxx")===-1)?(!bl):bl ;
+            alert(bl);
+            return bl
+        }   
+        
+        //Q3  
+        let truncate = (txt,max) => {
+            (txt.length>max)?rs=txt.substring(0,max)+"...":rs=txt
+            return rs
+        }
+
+        //Q4
+        let extractCurrencyValue = (txt,rate) => {
+            return parseInt(txt)*rate
+        } 
+
+        let txt = prompt("Enter text ? : ");
+        
+        //alert(ucFirst(txt)) //q1
+        //alert(checkSpam(txt)) //q2
+        //alert(truncate(txt,max)) //q3
+        //let max = +prompt("Enter max lenght string ? : ");
+        
+        let rate = +prompt("Enter rate ? : "); //4
+        alert(extractCurrencyValue(txt,rate))  //4
+    </script>
+</body>
+</html>
