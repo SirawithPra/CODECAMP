@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //array.map Questions
+
+        arr1_q1 = [1, 2, 30, 400]
+        arr2_q1 = arr1_q1.map(item => item*2)
+        
+        arr1_q2 = [1, 2, 3, 4]
+        arr2_q2 = arr1_q2.map(item => String(item))
+
+        arr1_q3 = [1, "1", 2, {}]
+        arr2_q3 = arr1_q3.map(item => typeof(item))
+        
+        arr1_q4 = ["apple", "banana", "orange"]
+        arr2_q4 = arr1_q4.map(item => item.toUpperCase())
+
+        arr1_q5 = [
+            { name: "apple", age: 14 },
+            { name: "banana", age: 18 },
+            { name: "watermelon", age: 32 },
+        ]
+        arr2_q5 = arr1_q5.map(item => item.name)
+
+        arr1_q6 = [
+            { name: "apple", age: 14 },
+            { name: "banana", age: 18 },
+            { name: "watermelon", age: 32 },
+        ]
+        arr2_q6 = arr1_q6.map(item => item.age)
+
+        arr1_q7 = [
+            { name: "apple", surname: "London" },
+            { name: "banana", surname: "Bangkok" },
+            { name: "watermelon", surname: "Singapore" },
+        ]
+        arr2_q7 = arr1_q7.map(item => item.name+ " "+item.surname)
+        //arr2_q7 = arr1_q7.map(item => `${item.name} ${item.surname}`)
+
+        arr1_q8 = [1,3,4,5,6,7,8,0]
+        arr2_q8 = arr1_q8.map(item => (item%2===1)? "odd":((item%2===0)&&(item===0))? "zero":"even" )
+
+        arr1_q9 = [1, -3, 2, 8, -4, 5]
+        arr2_q9 = arr1_q9.map(item => Math.abs(item))
+
+        arr1_q10 = [100, 200.25, 300.84, 400.3]
+        arr2_q10 = arr1_q10.map(item => item.toFixed(2))
+
+        arr1_q11 = [
+            { name: "apple", birth: "2000-01-01" },
+            { name: "banana", birth: "1990-10-01" },
+            { name: "watermelon", birth: "1985-12-01" },
+            ]  
+        //arr2_q11 = Array.from(arr1_q11)
+        //arr3_q11 = Array.from(arr2_q11)
+        //arr2_q11=arr2_q11.map(item => item["age"]=item.birth.slice(0,4))
+        
+        arr1_q12 = [
+            { name: "apple", birth: "2000-01-01" },
+            { name: "banana", birth: "1990-10-10" },
+            { name: "watermelon", birth: "1985-12-30" },
+        ]
+        arr2_q12=arr1_q12.map(item => 
+            `<tr><td>${item.apple}<td><td>${item.birth}<td><tr>`)
+    </script>
+</body>
+</html>
