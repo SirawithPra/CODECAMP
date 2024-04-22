@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Map เหมือนกับ Object ทุกประการ
+        //แต่ต่างกันตรงที่ Map ตัว key จะเป็นอะไรก็ได้ ไม่ได้จำกัดแค่ String
+        
+        let user = {
+            name : 'John',
+            age : 24,
+            gender : 'male',
+            from : 'bkk'
+        }//obj
+
+        let user2 = new Map(
+            [['name','John'],
+            ['age',24],
+            ['gender','male'],
+            ['from','bkk']]
+        )
+        user2.set('job','programer').set(true,'single').set(false,'married')
+        console.log(user2.get('from'))
+        //console.log(user2.get(prompt('key?')))
+        console.log(user2.has('gender'))
+        console.log(user2.delete(true))
+        console.log(user2.delete(false))
+        console.log(user2.size )//lenght
+        console.log(user2)
+        //user2.clear()
+
+        let m = new Map(
+            [[1,'one'],
+            [2,'two'],
+            [3,'three'],
+            [4,user],       // ชี้ obj ได้
+            [user,'vip']]   // obj เป็น key ได้
+        )
+        console.log(m)
+
+        m.get(user) // rs "vip"
+
+        m.forEach ((v, k) => {
+            if (k===3) m.set (k, 'Third')
+            console.log(`${v} is in key : ${k}`)
+        })
+
+        console.log(m)
+
+
+        // Object to Map
+        let n = new Map(Object.entries(user))
+
+        //Map to Object
+        let user_ex = Object.fromEntries(n)
+    </script>
+</body>
+</html>

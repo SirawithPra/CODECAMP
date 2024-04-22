@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+                //fill()
+        const array1 = [1, 2, 3, 4];
+
+        // Fill with 0 from position 2 until position 4
+        console.log(array1.fill(0, 2, 4));
+        // Expected output: Array [1, 2, 0, 0]
+
+        // Fill with 5 from position 1
+        console.log(array1.fill(5, 1));
+        // Expected output: Array [1, 5, 5, 5]
+
+        console.log(array1.fill(6));
+        // Expected output: Array [6, 6, 6, 6]
+    
+                //every()
+        const isBelowThreshold = (currentValue) => currentValue < 40;
+
+        const array2 = [1, 30, 39, 29, 10, 13];
+        
+        console.log(array2.every(isBelowThreshold));
+        // Expected output: true
+    
+                //some()
+        const array = [1, 2, 3, 4, 5];
+
+        // Checks whether an element is even
+        const even = (element) => element % 2 === 0;
+
+        console.log(array.some(even));
+        // Expected output: true
+
+    
+    
+    </script>
+</body>
+</html>

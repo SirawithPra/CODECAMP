@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //q1
+        function unique(arr) {
+            /* your code */
+            return [...new Set(values)]
+          }
+          
+        let values = ["Hare", "Krishna", "Hare", "Krishna", "Krishna", "Krishna", "Hare", "Hare", ":-O" ];
+        alert( unique(values) ); // Hare, Krishna, :-O
+
+        //q2
+        function aclean(arr){
+            arr.map(item => (new Set(item.toUpperCase())))
+        }
+        let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+        alert( aclean(arr) ); // "nap,teachers,ear" or "PAN,cheaters,era"
+
+        //3
+        let map = new Map();
+        map.set("name", "John");
+        let keys = Array(map.keys());
+
+        // Error: keys.push is not a function
+        keys.push("more");
+    </script>
+</body>
+</html>
