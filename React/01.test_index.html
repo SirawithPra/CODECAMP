@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+    </div>
+    <script src ="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
+    <script src ="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src = "https://unpkg.com/@babel/standalone@7.24.4/babel.js"></script>
+    <script type="text/babel">
+        const rootElement = document.getElementById("root")
+        const name ='Judie'
+        const className = 'container'
+        const props ={
+            className: "container-test",
+            onClick: ()=> console.log("Hello, Everyone!")
+        }
+        function GreetingMessage(props){
+            return <h1>Welcome {props.name}</h1>
+        } //function componant
+        const element = <div className ={className} {...props}>
+            <h1 className="Hello!-React-Text">Welcome ! {name}</h1>
+            <GreetingMessage name="React" /> 
+            <GreetingMessage name="AIM" /> 
+            <GreetingMessage name="PUM" /> 
+        </div>
+        //{GreetingMessage({name: "React"})}
+
+        ReactDOM.render(
+            element,
+            rootElement
+        )
+
+        //const element = React.createElement(
+        //    "div",{
+        //        className: "container"  
+        //   },
+        //    React.createElement(
+        //        "h1",{
+        //            className : "Hello!-React-Text"},
+        //        'Hello, React !'
+        //    )
+        //)
+        //const headingElement = document.createElement("h1")
+        //headingElement.className = "Hello!-React-Text"
+        //headingElement.textContent = 'Hello, React !'
+        //เหมือนด้านบน
+        
+        //rootElement.append(headingElement)
+        //เหมือนด้านบน
+    </script>
+</body>
+</html>
