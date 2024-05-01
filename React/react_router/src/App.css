@@ -1,0 +1,40 @@
+body {
+  margin:0 auto;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 1000px;
+  background-color: azure;
+}
+
+nav {
+  background-color: rgb(178, 243, 243);
+  display: flex;
+  justify-content: flex-end; 
+  /* set right */
+  padding: 5px 10px;
+}
+
+ul {
+  padding: 0px 10px;
+  display: flex; 
+  /* set flex line */
+  list-style: none;
+  background-color: rgb(173, 173, 251);
+}
+
+nav li {
+  padding: 5px;
+}
+
+nav a {
+  color: rgb(65, 41, 170);
+  padding: 5px;
+}
+
+div.home, div.about, div.topics{
+  background-color: rgb(178, 243, 243);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px 40px;
+  background-color: beige;
+}
