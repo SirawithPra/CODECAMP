@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import arrow from './arrow.png'
 import './App.css'
 
@@ -7,6 +7,30 @@ export default function TodoList()  {
     //text is variable and textUpdate is function
     const [list, listUpdate] = useState([])
     const [done, doneUpdate] = useState([])
+
+    //useEffect is a tracked function
+    const [Api, apiUpdate] = useState([])
+    useEffect(() => {
+        console.log("api changes and first update")
+        fetch("https://jsonplaceholder.typicode.com/todos")
+           .then(response => response.json())
+           .then(json => {apiUpdate(json)})
+    }, [])
+    //just only one time tracking
+
+    useEffect(() => {
+        console.log("list or done changes")
+    }, [list, done])
+    //tracking by adjust's state
+    useEffect(() => {
+        console.log("track list changes")
+    }, [list])
+    useEffect(() => {
+        console.log("track done changes")
+    }, [done])
+    useEffect(() => {
+        console.log("update")
+    })
     
 
     const handleAdd = () => {
@@ -64,8 +88,25 @@ export default function TodoList()  {
                     </span></li>)}
                 </ul>
             </div>
-            
+
+            <div className='table'>
+                <table>
+                    <tr>
+                        <th>userID</th>
+                        <th>id</th>
+                        <th>title</th>
+                    </tr>
+                    {Api.map((obj=>{
+                        return (<tr>
+                            <td>{obj.userId}</td>
+                            <td>{obj.id}</td>
+                            <td>{obj.title}</td>
+                        </tr>)
+                    }))}
+                </table>
+
             </div>
+        </div>
         
     )
 }
