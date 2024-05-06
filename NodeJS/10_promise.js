@@ -16,14 +16,21 @@ const checkIfItsDone = () => {
     isItDoneYet
         .then((ok) => {
             //ok is from workDone
-            console.log('come from resolve state in Promise');
+            console.log('Come from resolve state in Promise');
             console.log(ok);
         })
+
+    //shortest version
+        //.catch(console.log)
+    //shorter version
+        //.catch((err) => console.log(err));
+    //longer version
         .catch((err) => {
             //err is from why
-            console.log('come from reject state in Promise');
+            console.log('Come from reject state in Promise');
             console.log(err);
         });
+        
 };
 
 checkIfItsDone();
