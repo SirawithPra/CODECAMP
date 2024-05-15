@@ -54,6 +54,7 @@ const PlaceOrder = () => {
 
   useEffect(()=>{
     if(!token){
+      alert('Login before payment')
       navigate('/cart')
     }else if (getTotalCartAmount()===0){
       navigate('/cart')
