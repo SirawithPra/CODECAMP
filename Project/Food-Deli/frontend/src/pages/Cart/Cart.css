@@ -100,13 +100,13 @@
     font-size: 11px;
 }
 .icon :last-child{
-    position: relative;
-    top: -4px;
+    /* position: relative;
+    top: -4px; */
 }
 .up{
     transform: rotate(180deg);
-    position: relative;
-    bottom: -5px;
+    /* position: relative;
+    bottom: -5px; */
 }
 @media (max-width:750px){
     .cart-bottom{
