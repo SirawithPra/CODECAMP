@@ -1,0 +1,223 @@
+<mxfile host="65bd71144e">
+    <diagram id="edRQZ1CSrcCKt-ubTA8P" name="Page-1">
+        <mxGraphModel dx="568" dy="-347" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Teacher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="1380" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Course" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="1380" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Teaches" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="1385" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="4" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="1300" as="sourcePoint"/>
+                        <mxPoint x="480" y="1250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="cid" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="515" y="1290" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="id" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="175" y="1300" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="since timer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="335" y="1280" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="shape=link;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="4">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="370" y="1300" as="sourcePoint"/>
+                        <mxPoint x="470" y="1300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="270" y="1380" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="1380" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="2" target="13">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="1380" as="sourcePoint"/>
+                        <mxPoint x="350" y="1280" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="20" value="" style="endArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="14" target="4">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="1570" as="sourcePoint"/>
+                        <mxPoint x="350" y="1520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=none;html=1;entryX=0.639;entryY=-0.033;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="12" target="3">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="623" y="1334" as="sourcePoint"/>
+                        <mxPoint x="350" y="1520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value="Teacher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="1590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="Course" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="500" y="1590" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Teaches" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="330" y="1595" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="24" target="23">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="430" y="1510" as="sourcePoint"/>
+                        <mxPoint x="480" y="1460" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="cid" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="515" y="1500" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="id" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="175" y="1510" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="since timer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="335" y="1490" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="" style="shape=link;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="22" target="24">
+                    <mxGeometry width="100" relative="1" as="geometry">
+                        <mxPoint x="370" y="1510" as="sourcePoint"/>
+                        <mxPoint x="470" y="1510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="22" target="27">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="150" y="1590" as="sourcePoint"/>
+                        <mxPoint x="350" y="1490" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="28" target="24">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="300" y="1780" as="sourcePoint"/>
+                        <mxPoint x="350" y="1730" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="" style="endArrow=none;html=1;entryX=0.639;entryY=-0.033;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="26" target="23">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="623" y="1544" as="sourcePoint"/>
+                        <mxPoint x="350" y="1730" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="Teacher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="155" y="1810" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Course" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="505" y="1810" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Teaches" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="335" y="1815" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="37" target="36">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="435" y="1730" as="sourcePoint"/>
+                        <mxPoint x="485" y="1680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="cid" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="1720" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="id" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="180" y="1730" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="since timer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="340" y="1710" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="35" target="40">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="155" y="1810" as="sourcePoint"/>
+                        <mxPoint x="355" y="1710" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="" style="endArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="41" target="37">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="305" y="2000" as="sourcePoint"/>
+                        <mxPoint x="355" y="1950" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="" style="endArrow=none;html=1;entryX=0.639;entryY=-0.033;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="39" target="36">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="628" y="1764" as="sourcePoint"/>
+                        <mxPoint x="355" y="1950" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="46" value="Teacher" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="170" y="2050" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Course" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="520" y="2050" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="Teaches" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="350" y="2055" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="endArrow=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="48" target="47">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="450" y="1970" as="sourcePoint"/>
+                        <mxPoint x="500" y="1920" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="cid" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="535" y="1960" width="90" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="id" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="195" y="1970" width="70" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="since timer" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="355" y="1950" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="endArrow=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="46" target="51">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="170" y="2050" as="sourcePoint"/>
+                        <mxPoint x="370" y="1950" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="" style="endArrow=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="52" target="48">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="320" y="2240" as="sourcePoint"/>
+                        <mxPoint x="370" y="2190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="" style="endArrow=none;html=1;entryX=0.639;entryY=-0.033;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" edge="1" parent="1" source="50" target="47">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="643" y="2004" as="sourcePoint"/>
+                        <mxPoint x="370" y="2190" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="57" value="" style="endArrow=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="37" target="35">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="1730" as="sourcePoint"/>
+                        <mxPoint x="430" y="1680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="" style="endArrow=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="48" target="46">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="380" y="1730" as="sourcePoint"/>
+                        <mxPoint x="430" y="1680" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="&lt;p class=&quot;p1&quot;&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt;Database &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;ของมหาวิทยาลัย&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; CodeCampXX &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;ที่ประกอบไปด้วยข้อมูลของอาจารย์&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;มี&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; id &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;เป็น&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; unique attribute) &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;และ&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;รายวิชา&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;มี&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; cid &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;เป็น&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; unique attribute) &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;เก็บข้อมูลอาจารย์สอนรายวิชาต่าง&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;ๆ&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;จงวาด&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; ER Diagram &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;ทั้ง&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; 4 &lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s2&quot;&gt;เงื่อนไขต่อไปนี้&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot; class=&quot;s3&quot;&gt; (4 ER Diagrams)&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p class=&quot;p2&quot;&gt;&lt;span class=&quot;s3&quot;&gt;1. &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;อาจารย์สามารถสอนคอร์สเดียวกันในหลาย&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ๆ&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;เทอมได้&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;และสามารถเก็บได้ว่าสอนคอร์สนั้นล่าสุดเมื่อใด&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p class=&quot;p2&quot;&gt;&lt;span class=&quot;s3&quot;&gt;2. &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;อาจารย์สามารถสอนคอร์สเดียวกันในหลาย&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ๆ&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;เทอมได้&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;แต่ให้เก็บรายละเอียดทุก&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;ๆ&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;เทอมที่อาจารย์สอนด้วย&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p class=&quot;p2&quot;&gt;&lt;span class=&quot;s3&quot;&gt;3. &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;อาจารย์ทุกคนต้องสอนอย่างน้อย&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; 1 &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;วิชา&lt;/span&gt;&lt;/p&gt;&lt;br&gt;&lt;p class=&quot;p2&quot;&gt;&lt;span class=&quot;s3&quot;&gt;4. &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;อาจารย์ทุกคนต้องสอนแค่&lt;/span&gt;&lt;span class=&quot;s3&quot;&gt; 1 &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;วิชาเท่านั้น&lt;/span&gt;&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="990" y="1275" width="560" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="4" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="80" y="1310" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="3" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="1565" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="2" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="1785" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="64" value="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="2010" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

@@ -15,7 +15,7 @@ const isItDoneYet = new Promise((resolve, reject) => {
 const checkIfItsDone = () => {
     isItDoneYet
         .then((ok) => {
-            //ok is from workDone
+            //ok is from resolve : workDone
             console.log('Come from resolve state in Promise');
             console.log(ok);
         })
