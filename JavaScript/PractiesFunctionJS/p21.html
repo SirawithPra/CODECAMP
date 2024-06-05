@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"></p>
+    <script>
+        function printstar(n){
+            //(n===0)? alert('Zero') : (document.querySelector('#txt').innnerText=n)
+            if (n===0){
+                alert('Zero')
+                return("Zero Star")
+            }
+            else{
+                k=0
+                text=""
+                for(let j=0;j<n;j++){
+                    for(let i=0;i<n;i++){
+                        i<n-j-1?text+='_':text+="*"
+                    }
+                    for(let i=1;i<n;i++){
+                        i>j?text+='_':text+="*"
+                    }
+                    text+="\n"
+                    }
+                return (text)
+                }
+            }
+        document.querySelector('#txt').innerText=printstar(+prompt('Number?',"0"))
+    </script>
+</body>
+</html>

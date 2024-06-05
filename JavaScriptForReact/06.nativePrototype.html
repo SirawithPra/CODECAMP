@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>native prototype</title>
+</head>
+<body>
+    <script>
+        //โดยปกติ obj จะอยู่บนสุดละถูกชี้ด้วย arry
+        let arr = [1, 2, 3];
+
+        // ถ่ายทอดมาจาก Array.prototype?
+        alert( arr.__proto__ === Array.prototype ); // true
+
+        // อันนี้ล่ะ มาจาก Object.prototype?
+        alert( arr.__proto__.__proto__ === Object.prototype ); // true
+
+        // และก็เป็น null เมื่อขึ้นไปถึงข้างบนสุด.
+        alert( arr.__proto__.__proto__.__proto__ ); // null
+
+
+//ยืม prototype จาก array
+        let obj = {
+            0: "Hello",
+            1: "world!",
+            length: 2,
+          };
+          
+          obj.join = Array.prototype.join;
+          
+          alert( obj.join(',') ); // Hello,world!
+
+
+//ex1
+        Function.prototype.defer = function(ms){
+            setTimeout(this,ms)            //เพิ่ม prototype หน่วงเวลา
+        }
+        function f() {
+            alert('Hello!!!');
+        }
+        f.defer(1000) // 1 sec
+        f.defer(4000) // 4 sec
+    </script>
+</body>
+</html>

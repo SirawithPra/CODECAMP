@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//sub-layer
+        let animal = {
+            eats: true,
+            walk() {
+              alert("Animal walk");
+            }
+          };
+          
+          let rabbit = {
+            jumps: true,
+            __proto__: animal
+          };
+          
+          let longEar = {
+            earLength: 10,
+    //      walk() {alert("walk")},  //return walk
+            __proto__: rabbit
+          };
+          
+          // walk เอามาจาก prototype chain
+          longEar.walk(); // Animal walk
+          alert(longEar.jumps); // true (จาก animal)
+
+
+// this : {this is always the object before the dot.}
+        let animal2= {
+            name : 'animal',
+            bark : function() {
+                alert(this.name+ " barking")
+            }
+        };
+        let rabbit2 = {
+            name : 'rabbit',
+            __proto__:animal2        
+        };
+        animal2.bark()
+        rabbit2.bark()
+
+    //ex3
+        let animal3 = {
+            eat() {
+            this.full = true;   
+            //สร้าง properties ให้ obj 
+            //ได้ rabbit3 { full : true, eat : function }
+            }
+        };
+        
+        let rabbit3 = {
+            __proto__: animal3
+        };
+        
+        rabbit3.eat();
+
+    //ex4
+        let hamster = {
+            eat(food) {
+            if(!this.stomach) this.stomach =[]
+                this.stomach.push(food);
+            }
+        };
+        let speedy = {
+            __proto__: hamster
+          };
+          
+        let lazy = {
+            __proto__: hamster
+          };
+        // This one found the food
+        speedy.eat("apple");
+        alert( speedy.stomach ); // apple
+
+        // This one also has it, why? fix please.
+        alert( lazy.stomach ); // undefined
+    </script>
+</body>
+</html>

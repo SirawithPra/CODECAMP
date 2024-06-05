@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function slow(x) {
+            // สมมติว่าฟังก์ชันนี้มีการใช้ CPU ในการคำนวณอย่างหนัก
+            alert(`Called with ${x}`);
+            return x;
+          }
+        
+        function cachingDecorator(func) {
+            let cache = new Map();
+        //wrapper
+            return function(x) {
+              if (cache.has(x)) {    // ถ้ามี key อยู่ใน cache
+                return cache.get(x); // ก็เอาค่าออกมาใช้เลย
+              }
+          
+              let result = func(x);  // หรือไม่ก็เรียก func ใหม่
+          
+              cache.set(x, result);  // และทำการ cache (remember) ผลลัพธ์ไว้
+              return result;
+            };
+        //wrapper
+        }
+        
+        slow = cachingDecorator(slow);
+
+        alert(slow(1)); // slow(1) ถูก cached เรียบร้อย
+        alert("Again: " + slow(1)); // ผลลัพธ์เหมือนเดิม
+          
+        alert(slow(2)); // slow(2) is ถูก cached เรียบร้อย
+        alert("Again: " + slow(2)); // ผลลัพธ์เหมือนเดิม
+
+    </script>
+</body>
+</html>

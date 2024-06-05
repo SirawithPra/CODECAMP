@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//func(1, 2, 3);
+//func.call(obj, 1, 2, 3);
+
+        function sayHi() {
+            alert(this.name);
+        }
+          
+        let user = { name: "John" };
+        let admin = { name: "Admin" };
+          
+// ใช้ call ส่งค่า objects เป็นค่า "this"
+        sayHi.call( user ); // John
+        sayHi.call( admin ); // Admin
+
+        function say(phrase) {
+            alert(this.name + ': ' + phrase);
+          }
+        // user ทำให้ที่เป็น this ของฟังก์ชันและ "Hello" เป็น argument ตัวแรก
+        say.call( user, "Hello" ); // John: Hello
+
+//การใช้งาน Call ใน wrapper เพื่อส่งค่า this ไปที่ Method ของ obj
+        let worker = {
+            someMethod() {
+            return 1;
+            },
+            slow(x) {
+            alert("Called with " + x);
+            return x * this.someMethod(); // (*)
+            }
+        };
+        function cachingDecorator(func) {
+            let cache = new Map();
+            return function(x) {
+              if (cache.has(x)) {
+                return cache.get(x);
+              }
+              let result = func.call(this, x); // "this" ถึงส่งเข้าไปเรียบร้อยแล้ว
+              cache.set(x, result);
+              return result;
+            };
+        }
+        worker.slow = cachingDecorator(worker.slow); // ทำการสร้าง cache
+        alert( worker.slow(2) ); // works
+        alert( worker.slow(2) ); // works ทำงานใน cache
+
+//mult - argument
+        // เราจะมาทำ caching ของ worker.slow
+        let worker = {
+            slow(min, max) {
+            alert(`Calledwith${min},${max}`);
+            return min + max;
+            }
+        };
+        function cachingDecorator(func, hash) {
+            let cache = new Map();
+            return function() {
+              let key = hash(arguments); // arguments มีค่า [3,5]
+              if (cache.has(key)) {
+                return cache.get(key);
+              }
+              let result = func.call(this, ...arguments); 	// ...arguments กระจาย 3,5 ออกจาก [3,5]
+              cache.set(key, result);
+              return result;
+            };
+        }
+        function hash(args) {
+            return args[0] + ',' + args[1];
+        }
+        worker.slow = cachingDecorator(worker.slow, hash);
+        alert( worker.slow(3, 5) ); 
+        alert( "Again " + worker.slow(3, 5) ); // ใช้ค่า cached ที่เก็บไว้
+
+        
+    </script>
+</body>
+</html>
