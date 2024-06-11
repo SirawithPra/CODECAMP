@@ -33,9 +33,10 @@ const Navbar = () => {
             <li><Link to="about" smooth={true} offset={0} deration={500}
             className="text-hover transition duration-300 cursor-pointer  px-5 md:px-0" 
             onClick={()=>{setMenu('about'),setMobileMenu(false)}}>About</Link></li>
-            <li><a href="#" 
+            <li><Link to="menu" smooth={true} offset={0} deration={500}
             className="text-hover transition duration-300 cursor-pointer  px-5 md:px-0" 
-            onClick={()=>setMenu('menu')}>Menu</a></li>
+            onClick={()=>{setMenu('menu'),setMobileMenu(false)}}>Menu</Link></li>
+            
             <li><a href="#" 
             className="text-hover transition duration-300 cursor-pointer  px-5 md:px-0" 
             onClick={()=>setMenu('blog')}>Blog</a></li>
