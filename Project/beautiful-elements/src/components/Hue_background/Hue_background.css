@@ -27,24 +27,27 @@
         100px 100px 80px oklch(0% .02 var(--hue) / 0.1);
 }
 
+
 .scoreboard > header {
     background: var(--header-bg);
     color: var(--text);
+    text-align: center; /* Ensure the header content is centered */
 }
 
 .scoreboard li {
     --lightness: calc(75% - (var(--i) * 7%));
     background: oklch(var(--lightness) .2 var(--hue));
     color: var(--text);
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+.scoreboard li:hover{
+    transform: scale(1.2);
 }
 
 .scoreboard .number {
     background: var(--text);
     color: var(--_bg);
-}
-
-.scoreboard > header > svg {
-    color: var(--primary);
 }
 
 .scoreboard ol {
@@ -73,10 +76,12 @@
 .scoreboard header {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 1rem;
     padding: var(--_pad);
 }
 
 input[type="range"] {
     accent-color: var(--primary);
+    cursor: pointer;
 }
