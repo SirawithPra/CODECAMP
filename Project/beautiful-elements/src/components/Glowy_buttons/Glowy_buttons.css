@@ -1,0 +1,55 @@
+/* Define the button element */
+button {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    transition: color 0.4s;
+  }
+  
+  /* Define the :before pseudo-element */
+  button::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    box-shadow: 0 1px hsl(0 0% 100% / 0.15) inset;
+    background: hsl(0 0% 10%);
+    transition: opacity 0.4s;
+  }
+  
+  /* Define the :after pseudo-element */
+  button::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    filter: blur(20px);
+    background: radial-gradient(
+      50% 50% at center,
+      hsl(var(--hue) 80% 85%),
+      hsl(var(--hue) 80% 70%),
+      transparent
+    );
+    opacity: 0;
+    transition: opacity 0.4s;
+  }
+  
+  /* Hover effect */
+  button:hover {
+    color: #000;
+  }
+  
+  button:hover::after {
+    opacity: 1;
+  }
+  
+  /* Active effect */
+  button:active::after {
+    opacity: 0.5;
+  }
+  
