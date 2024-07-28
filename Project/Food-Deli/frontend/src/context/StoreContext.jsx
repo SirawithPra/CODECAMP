@@ -6,7 +6,8 @@ export const StoreContext = createContext(null)
 const StoreContextProvider = (props)=>{
 
     const [cartItems,setCartItems]= useState({});
-    const url = 'http://localhost:4000'
+    // const url = 'http://localhost:4000'
+    const url = 'https://sirawith-food-deli-c1ce755e07f4.herokuapp.com'
     const [token,setToken] = useState("");
     const [food_list,setFoodList] = useState([]);
 
