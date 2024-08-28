@@ -1,0 +1,87 @@
+:root {
+    --hue: 230;
+    --primary: oklch(70% .2 var(--hue));
+    --primary-highlight: oklch(97% .2 var(--hue));
+    --header-bg: oklch(35% .01 200);
+    --text: white;
+}
+
+.container-hue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    padding: 40px;
+    background: radial-gradient(circle at center, var(--primary-highlight), var(--primary));
+}
+
+.scoreboard {
+    max-width: 600px;
+    width: 80%;
+    box-shadow:
+        3px 3px 2px oklch(0% .02 var(--hue) / 0.02),
+        7px 7px 5px oklch(0% .02 var(--hue) / 0.03),
+        13px 13px 10px oklch(0% .02 var(--hue) / 0.04),
+        22px 22px 18px oklch(0% .02 var(--hue) / 0.07),
+        42px 42px 33px oklch(0% .02 var(--hue) / 0.075),
+        100px 100px 80px oklch(0% .02 var(--hue) / 0.1);
+}
+
+
+.scoreboard > header {
+    background: var(--header-bg);
+    color: var(--text);
+    text-align: center; /* Ensure the header content is centered */
+}
+
+.scoreboard li {
+    --lightness: calc(75% - (var(--i) * 7%));
+    background: oklch(var(--lightness) .2 var(--hue));
+    color: var(--text);
+    cursor: pointer;
+    transition: transform .3s ease;
+}
+.scoreboard li:hover{
+    transform: scale(1.2);
+}
+
+.scoreboard .number {
+    background: var(--text);
+    color: var(--_bg);
+}
+
+.scoreboard ol {
+    padding: 0;
+}
+
+.scoreboard li {
+    --_pad: 1rem 1.5rem;
+    padding: var(--_pad);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.scoreboard li .number {
+    aspect-ratio: 1;
+    border-radius: 1e3px;
+    block-size: 3ch;
+    font-size: .9rem;
+    line-height: 1;
+    display: inline-flex;
+    place-items: center;
+    place-content: center;
+}
+
+.scoreboard header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: var(--_pad);
+}
+
+input[type="range"] {
+    accent-color: var(--primary);
+    cursor: pointer;
+}

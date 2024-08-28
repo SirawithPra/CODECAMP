@@ -1,0 +1,13 @@
+:root {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: black;}
+  .main-container::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #000; /* You can change this to any color you prefer */
+    margin-top: 16px; /* Adjust the space above the line */
+  }
