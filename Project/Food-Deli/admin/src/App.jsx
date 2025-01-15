@@ -10,7 +10,8 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const App = () => {
 
-  const url = 'http://localhost:4000';
+  // const url = 'http://localhost:4000';
+  const url = 'https://sirawith-food-deli-c1ce755e07f4.herokuapp.com';
 
   return (
     <div>

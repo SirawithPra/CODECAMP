@@ -41,8 +41,8 @@ const Contact = () => {
                 </h3>
                 <p>Feel free to reach out through contact form or find our contact information below. Your feedback, questions, and suggestions are important to us as we strive to provide exceptional service to our university community.</p>
                 <ul>
-                    <li><img src={mail_icon} alt="" />sirawith.pra@gmail.com</li>
-                    <li><img src={phone_icon} alt="" />+66948804499</li>
+                    <li><img src={mail_icon} alt="" />dummy@gmail.com</li>
+                    <li><img src={phone_icon} alt="" />+6694880xxxx</li>
                     <li><img src={location_icon} alt="" />Address</li>
                 </ul>
             </div>

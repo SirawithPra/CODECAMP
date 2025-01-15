@@ -1,8 +1,9 @@
 front URL
 - ../Food-Deli/frontend/src/context/StoreContext.jsx
+- npm run dev
 admin
 - ../Food-Deli/admin/src/App.jsx
-backend stripe
+backend
 - ../Food-Deli/backend/controllers/orderController.js
-backend heroku
-- ../Users/sirawith/Desktop/Coding/CODECAMP/Project/Food-Deli/backend/config/db.js
+- ../Project/Food-Deli/backend/config/db.js
+- nodemon server.js
