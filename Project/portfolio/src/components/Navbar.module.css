@@ -1,0 +1,38 @@
+/* src/components/Navbar.module.css */
+.navbar {
+  background-color: #930000;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar li {
+  font-size: 18px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* เอฟเฟคเมื่อเลือกเมนู */
+.navbar li.active {
+  background-color: #fff;   /* สีพื้นหลังเมื่อเมนูนั้นถูกเลือก */
+  border-radius: 5px;       /* มุมโค้ง */
+  padding: 5px 10px;        /* เพิ่มขนาด padding เพื่อให้เมนูเด่นขึ้น */
+}
+
+.navbar li.active a {
+  color: #930000;  /* เปลี่ยนสีของข้อความเมื่อเลือกเมนู */
+}

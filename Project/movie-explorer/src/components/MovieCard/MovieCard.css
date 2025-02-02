@@ -1,0 +1,58 @@
+/* MovieCard.css */
+.movie-card {
+    background-color: #222;
+    color: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .movie-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .movie-card h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #e3e3e3;
+  }
+  
+  .movie-card button {
+    background-color: #930000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .movie-card button:hover {
+    background-color: #b50000;
+  }
+  
+  .movie-card a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #00bcd4;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+  }
+  
+  .movie-card a:hover {
+    color: #008c9e;
+  }
+  
